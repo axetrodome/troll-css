@@ -1,0 +1,133 @@
+
+@import '_colors';
+@import '_backgrounds';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+
+  font-size: 62.5%;
+  font-family: $font-family-sans-serif;
+}
+nav {
+	background-color: $dark-background;
+	ul {
+		overflow: hidden;
+		list-style-type: none;
+	}
+	li {
+		padding:8px 15px;
+		display:inline-block;
+		a {
+			color:#fff;
+			text-decoration: none;
+		}
+		a:hover {
+			color:#f1f1f1;
+		}
+	}
+}
+h1,
+h2, 
+h3, 
+h4 {
+	color: $color-text;
+}
+body {
+	font-size:1.8rem;
+	background: $background;
+	color:$color-text;
+}
+.container {
+	width:70%;
+	margin:auto;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+p {
+	color: $color-text;
+}
+.help {
+	color: $color-text;
+	padding:15px 0 15px 0;
+}
+%alert {
+	padding: 8px 15px;
+	border-radius: 4px;
+	border:none;
+	margin:10px 0px 10px 0px;
+}
+.alert-danger {
+	@extend %alert;
+	background-color: $danger;
+	color: #fff;
+}
+
+.alert-primary {
+	@extend %alert;
+	background-color: $primary;
+	color: #fff;
+}
+
+.btn {
+	padding: 8px 15px;
+	border:none;
+	cursor: pointer;
+	border-radius: 5px;
+	outline: none;
+}
+
+.btn-danger {
+	color: #fff;
+	background-color: $danger;
+}
+.btn-danger:hover {
+	color: #fff;
+	background-color: $danger-hover;
+}
+.btn-primary {
+	color: #fff;
+	background-color: $primary;
+}
+.btn-primary:hover {
+	background-color: $primary-hover;
+}
+
+.btn-default {
+	color: #333;
+	background-color: $default;
+}
+
+.btn-default:hover {
+	background-color: $default-hover;
+}
+
+.btn-dark {
+	color: #fff;
+	background-color: $dark;
+}
+
+.btn-dark:hover {
+	background-color: $dark-hover;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+      -ms-transform: $property;
+          transform: $property;
+}
+
+.box { 
+	@include transform(rotate(30deg)); 
+}

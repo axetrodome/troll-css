@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Troll</title>
+	<link rel="stylesheet" id="themes" href="css/themes/default.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Contacts</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1>Heading</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi expedita porro quaerat quis reprehenderit aut repudiandae fuga placeat dolorem velit, odio similique, aperiam, eum doloribus neque illum ratione doloremque obcaecati!</p>
+		<hr>
+		<div class="help">
+			<small>Select buttons to switch themes</small>
+		</div>
+		<div class="buttons">
+			<button class="btn btn-dark" onclick="dark()">Dark</button>
+			<button class="btn btn-default" onclick="def()">Default</button>
+			<button class="btn btn-danger">Danger</button>
+			<button class="btn btn-primary">Primary</button>
+		</div>
+		<hr>
+		<div class="alerts">
+			<div class="alert alert-danger">
+				Error alert
+			</div>
+			<div class="alert alert-primary">
+				Primary alert
+			</div>
+		</div>
+	</div>
+	<script>
+		var themes = document.getElementById("themes")
+
+		function def() {
+			themes.href="css/themes/default.css"
+		}
+		function dark() {
+			themes.href="css/themes/dark.css"
+		}
+		
+	</script>
+</body>
+</html>
