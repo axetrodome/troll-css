@@ -13,20 +13,22 @@
 			<li><a href="#">About</a></li>
 		</ul>
 	</nav>
-	<div class="container">
+	<main>
 		<h1>Heading</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi expedita porro quaerat quis reprehenderit aut repudiandae fuga placeat dolorem velit, odio similique, aperiam, eum doloribus neque illum ratione doloremque obcaecati!</p>
 		<hr>
-		<div class="help">
+		<div>
 			<small>Select buttons to switch themes</small>
 		</div>
 		<div class="buttons">
-			<button class="btn btn-dark" onclick="dark()">Dark</button>
-			<button class="btn btn-default" onclick="def()">Default</button>
-			<button class="btn btn-danger">Danger</button>
-			<button class="btn btn-primary">Primary</button>
+			<button>No class</button>
+			<button class="btn-dark" onclick="dark()">Dark</button>
+			<button onclick="def()">Default</button>
+			<button class="btn-danger">Danger</button>
+			<button class="btn-primary">Primary</button>
 		</div>
 		<hr>
+		<a href="#">Sample links</a>
 		<div class="alerts">
 			<div class="alert alert-danger">
 				Error alert
@@ -35,7 +37,49 @@
 				Primary alert
 			</div>
 		</div>
-	</div>
+		<div>
+			<pre>
+				if(!sleep) {
+					do something
+				}
+			<pre>
+		</div>
+		<div class="inputs">
+			<form>
+				<input type="text" name="name" placeholder="Name..">
+				<textarea placeholder="Thoughts here.."></textarea>
+			</form>
+		</div>
+		<hr>
+		<div class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>Javascript</th>
+						<th>PHP</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>sample description</td>
+						<td>sample description</td>
+					</tr>
+					<tr>
+						<td>sample description</td>
+						<td>sample description</td>
+					</tr>
+					<tr>
+						<td>sample description</td>
+						<td>sample description</td>
+					</tr>
+					<tr>
+						<td>sample description</td>
+						<td>sample description</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
 	<script>
 		var themes = document.getElementById("themes")
 

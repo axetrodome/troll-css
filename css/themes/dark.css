@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%;
@@ -15,10 +16,10 @@ nav {
     padding: 8px 15px;
     display: inline-block; }
     nav li a {
-      color: #fff;
-      text-decoration: none; }
+      color: #fff; }
     nav li a:hover {
-      color: #f1f1f1; }
+      color: #f1f1f1;
+      text-decoration: none; }
 
 h1,
 h2,
@@ -31,7 +32,7 @@ body {
   background: #222222;
   color: #c9c9c9; }
 
-.container {
+main {
   width: 70%;
   margin: auto; }
 
@@ -45,9 +46,59 @@ hr {
 p {
   color: #c9c9c9; }
 
-.help {
-  color: #c9c9c9;
-  padding: 15px 0 15px 0; }
+input, textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  padding: 8px 15px;
+  width: 100%;
+  margin: 5px 0 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border: 1px solid #ddd; }
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #c9c9c9; }
+  table td {
+    padding: 8px 15px;
+    border: 1px solid #ddd; }
+  table th {
+    padding: 8px 15px;
+    border: 1px solid #ddd; }
+  table tr:nth-child(even) {
+    background-color: #d1d8e0;
+    color: #333; }
+
+button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  background-color: #26de81;
+  color: #fff; }
+
+button:hover {
+  background-color: #20bf6b; }
+
+small {
+  color: #c9c9c9; }
+
+a {
+  text-decoration: none;
+  color: #45aaf2; }
+
+a:hover {
+  text-decoration: underline;
+  color: #2d98da; }
 
 .alert-danger, .alert-primary {
   padding: 8px 15px;
@@ -63,13 +114,6 @@ p {
   background-color: #3498db;
   color: #fff; }
 
-.btn {
-  padding: 8px 15px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: none; }
-
 .btn-danger {
   color: #fff;
   background-color: #c0392b; }
@@ -84,13 +128,6 @@ p {
 
 .btn-primary:hover {
   background-color: #2980b9; }
-
-.btn-default {
-  color: #333;
-  background-color: #ecf0f1; }
-
-.btn-default:hover {
-  background-color: #bdc3c7; }
 
 .btn-dark {
   color: #fff;
