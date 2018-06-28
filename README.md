@@ -1,3 +1,2 @@
 # troll-css
-Lightweight css framework
-inspired by sakura-css
+I shamelessly stole the idea from sakura-css
