@@ -5,6 +5,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 
@@ -24,10 +25,10 @@ nav {
 		display:inline-block;
 		a {
 			color:#fff;
-			text-decoration: none;
 		}
 		a:hover {
 			color:#f1f1f1;
+			text-decoration: none;
 		}
 	}
 }
@@ -42,7 +43,7 @@ body {
 	background: $background;
 	color:$color-text;
 }
-.container {
+main {
 	width:70%;
 	margin:auto;
 }
@@ -58,9 +59,84 @@ hr {
 p {
 	color: $color-text;
 }
-.help {
+%fields {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+	padding:8px 15px;
+	width:100%;
+	margin: 5px 0 5px 0;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	border: 1px solid #ddd;
+}
+%fields-focus {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	border:1px solid rgba(81, 203, 238, 1);
+}
+form {
+	//
+}
+input {
+	@extend %fields;
+}
+textarea {
+	@extend %fields;
+}
+input:focus {
+	@extend %fields-focus;
+}
+textarea:focus {
+	@extend %fields-focus;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
 	color: $color-text;
-	padding:15px 0 15px 0;
+	td {
+		padding:8px 15px;
+		border: 1px solid #ddd;
+	}
+	th {
+		padding:8px 15px;
+		border: 1px solid #ddd;
+	}
+	tr:nth-child(even) {
+		background-color: $background-fade;
+		color: $background-fade-text-color;
+	}
+}
+
+button {
+	padding: 8px 15px;
+	border:none;
+	cursor: pointer;
+	border-radius: 5px;
+	outline: none;
+	background-color: $default;
+	color:#fff;
+}
+button:hover {
+	background-color: $default-hover;
+}
+small {
+	color: $color-text;
+}
+a {
+	text-decoration: none;
+	color: #45aaf2;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #2d98da;
+}
+
+span {
+	//
 }
 %alert {
 	padding: 8px 15px;
@@ -80,14 +156,6 @@ p {
 	color: #fff;
 }
 
-.btn {
-	padding: 8px 15px;
-	border:none;
-	cursor: pointer;
-	border-radius: 5px;
-	outline: none;
-}
-
 .btn-danger {
 	color: #fff;
 	background-color: $danger;
@@ -102,15 +170,6 @@ p {
 }
 .btn-primary:hover {
 	background-color: $primary-hover;
-}
-
-.btn-default {
-	color: #333;
-	background-color: $default;
-}
-
-.btn-default:hover {
-	background-color: $default-hover;
 }
 
 .btn-dark {
