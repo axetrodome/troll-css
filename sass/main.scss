@@ -1,6 +1,6 @@
 
-@import '_colors';
-@import '_backgrounds';
+@import 'partials/_colors';
+@import 'partials/_backgrounds';
 
 * {
 	margin: 0;
@@ -47,7 +47,12 @@ main {
 	width:70%;
 	margin:auto;
 }
-
+footer {
+	//
+}
+header {
+	//
+}
 hr {
     display: block;
     height: 1px;
@@ -68,7 +73,6 @@ p {
 	padding:8px 15px;
 	width:100%;
 	margin: 5px 0 5px 0;
-	border-radius: 5px;
 	outline: none;
 	border: none;
 	border: 1px solid #ddd;
@@ -78,6 +82,10 @@ p {
 	border:1px solid rgba(81, 203, 238, 1);
 }
 form {
+	//
+	padding: 15px;
+}
+legend {
 	//
 }
 input {
