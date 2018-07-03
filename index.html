@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Troll</title>
-	<link rel="stylesheet" id="themes" href="css/themes/default.css">
+	<link rel="stylesheet" id="themes" href="assets/css/themes/default.css">
+	<link rel="icon" href="public/icon.png" type="image/png" sizes="16x16">
 </head>
 <body>
 	<nav>
@@ -28,7 +29,20 @@
 			<button class="btn-primary">Primary</button>
 		</div>
 		<hr>
-		<a href="#">Sample links</a>
+		<div>
+			<img src="public/sample.jpg" alt="sample_image">
+		</div>
+		<ul>
+			<li>
+				<a href="#">First Sample link</a>
+			</li>
+			<li>
+				<a href="#">Second Sample link</a>
+			</li>
+			<li>
+				<a href="#">Third Sample link</a>
+			</li>
+		</ul>
 		<div class="alerts">
 			<div class="alert alert-danger">
 				Error alert
@@ -39,9 +53,11 @@
 		</div>
 		<div>
 			<pre>
+				<code>
 				if(!sleep) {
-					do something
+					do_something()
 				}
+				</code>
 			<pre>
 		</div>
 		<div class="inputs">
@@ -50,6 +66,11 @@
 					<legend>Sample form</legend>
 					<input type="text" name="name" placeholder="Name..">
 					<textarea placeholder="Thoughts here.."></textarea>
+					<select name="" id="">
+						<option value="one">one</option>
+						<option value="two">two</option>
+						<option value="three">three</option>
+					</select>
 				</fieldset>
 			</form>
 		</div>
@@ -96,12 +117,11 @@
 		var themes = document.getElementById("themes")
 
 		function def() {
-			themes.href="css/themes/default.css"
+			themes.href="assets/css/themes/default.css"
 		}
 		function dark() {
-			themes.href="css/themes/dark.css"
+			themes.href="assets/css/themes/dark.css"
 		}
-		
 	</script>
 </body>
 </html>

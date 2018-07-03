@@ -5,8 +5,8 @@
 
 body {
   font-size: 1.8rem;
-  background: #222222;
-  color: #c9c9c9; }
+  background: #f1f1f1;
+  color: #4a4a4a; }
 
 html {
   font-size: 62.5%;
@@ -30,7 +30,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #c9c9c9; }
+  color: #4a4a4a; }
 
 main {
   width: 70%;
@@ -53,7 +53,7 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0; }
 
-input, textarea {
+select, input, textarea {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -73,14 +73,15 @@ form {
   padding: 15px; }
 
 blockquote {
-  border-left: 3px solid #3498db;
+  border-left: 3px solid #333;
   padding: 8px 15px 5px 15px;
   background: #e3e3e3;
   color: #333;
   font-style: italic;
   font-size: 15px;
   margin: auto;
-  width: 90%; }
+  width: 90%;
+  font-family: "Segoe Print", "Times New Roman", Verdana; }
 
 fieldset {
   padding: 8px 5px 8px 5px; }
@@ -88,7 +89,7 @@ fieldset {
 table {
   width: 100%;
   border-collapse: collapse;
-  color: #c9c9c9; }
+  color: #4a4a4a; }
   table td {
     padding: 8px 15px;
     border: 1px solid #ddd; }
@@ -119,6 +120,9 @@ a {
 a:hover {
   text-decoration: underline;
   color: #2d98da; }
+
+img {
+  max-width: 100%; }
 
 .alert-danger, .alert-primary {
   padding: 8px 15px;
@@ -161,4 +165,4 @@ a:hover {
   -ms-transform: rotate(30deg);
   transform: rotate(30deg); }
 
-/*# sourceMappingURL=dark.css.map */
+/*# sourceMappingURL=default.css.map */
