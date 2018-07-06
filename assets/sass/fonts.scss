@@ -1,0 +1,33 @@
+@import "partials/variables";
+
+@font-face {
+  font-family: 'troll-css';
+  src:
+    url('#{$icomoon-font-path}/troll-css.ttf?n1epwl') format('truetype'),
+    url('#{$icomoon-font-path}/troll-css.woff?n1epwl') format('woff'),
+    url('#{$icomoon-font-path}/troll-css.svg?n1epwl#troll-css') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="tc-"], [class*=" tc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'troll-css' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tc-music {
+  &:before {
+    content: $tc-music; 
+  }
+}
+
